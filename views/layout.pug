@@ -1,0 +1,72 @@
+doctype html
+html
+  head
+    title CICV
+    link(rel="icon", href="/images/favicon.ico")
+    meta(http-equiv="content-type", content="text/html", charset="utf-8")
+    //meta(http-equiv="Content-Security-Policy", content="upgrade-insecure-requests")
+    meta(name="description", content="")
+    meta(name="keywords", content="")
+    script(src="/javascripts/cdc-articles-bundle.js")
+    script(src="/javascripts/other-articles-bundle.js")
+    script(src="/javascripts/feature-article-scrape-bundle.js")
+    
+    // jQuery for COVID-19 Data API from JHU
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js", crossorigin="anonymous")
+    link(rel="stylesheet", href="/stylesheets/bootstrap.min.css")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+    
+    script(src="/javascripts/skel.min.js")
+    script(src="/javascripts/skel-panels.min.js")
+    script(src="/javascripts/init.js")
+    link(href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700italic,400,300,700", rel="stylesheet", type="text/css")
+    link(rel="stylesheet", href="/stylesheets/style.css")
+    noscript
+      //link(rel="stylesheet", href="/stylesheets/skel-noscript.css")
+      //link(rel="stylesheet", href="/stylesheets/style.css")
+      //link(rel="stylesheet", href="/stylesheets/style-desktop.css")
+        
+  body.homepage
+    // Header 
+    div#header
+      div.container
+        
+        // Logo, UPPERCASED 
+        div#logo
+          h1: a(href="#") CICV
+            
+        // Navigation Bar
+        nav#nav
+          ul
+            li.active: a(href="/") Tin Tức COVID-19
+            li: a(href="stats") Thống Kê COVID-19
+            li: a(href="about") Về CICV 
+            li: a(href="contact") Liên Hệ 
+    
+    // Page Title
+    div#title
+      .container
+        h1= title
+        h2 Kênh Thông Tin và Dữ Liệu Tổng Hợp về COVID-19 tại Việt Nam và Thế Giới
+        
+    // Banner container
+    div#banner
+      .container
+        // code here
+        // p Source: https://archenvironment.uoregon.edu
+          
+    // Page Content  
+    block content
+    
+      
+    // Footer
+    #footer
+      .container
+        .row
+          div(class="12u")
+            section
+              h2 COVID-19 Information Center of Vietnam
+              p
+                | Contact 
+                a(href='http://www.facebook.com/quan.a.bui') Quan Bui
+                |  for support.

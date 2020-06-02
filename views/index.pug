@@ -1,0 +1,77 @@
+extends layout
+
+block content
+  // Main 
+  #page
+  
+    // Extra
+    #marketing.container
+      .row
+        div(class="4u")
+          section
+            header
+              h2 Về Coronavirus
+            p.subtitle theo Tổ Chức Y Tế Thế Giới (WHO)
+            p: a(href="https://www.who.int/health-topics/coronavirus"): img(src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/food-beverage-nutrition/foodnavigator.com/news/food-safety-quality/covid-19-and-food-this-virus-is-sensitive-to-cooking-temperatures/10810118-1-eng-GB/COVID-19-and-food-This-virus-is-sensitive-to-cooking-temperatures_wrbm_large.jpg", width= "282px", height = "150px", alt="")
+            a(href="https://www.who.int/health-topics/coronavirus").button Tìm hiểu
+            
+        div(class="4u")
+          section
+            header
+              h2 Triệu chứng COVID-19
+            p.subtitle theo Trung Tâm Phòng Chống Dịch Bệnh Hoa Kỳ (CDC)
+            p: a(href="https://www.cdc.gov/coronavirus/2019-ncov/downloads/COVID19-symptoms-vietnamese.pdf"): img(src="https://www.cdc.gov/TemplatePackage/contrib/widgets/images/cdc_badge.png", width= "285px", height = "150px", alt="")
+            a(href="https://www.cdc.gov/coronavirus/2019-ncov/downloads/COVID19-symptoms-vietnamese.pdf").button Tìm Hiểu
+      
+        div(class="4u")
+          section
+            header
+              h2 Xét Nghiệm Nhanh Covid-19
+            p.subtitle với COVID-19 Screening Tool của Apple và CDC
+            p: a(href="https://www.apple.com/covid19/"): img(src="https://covid19-static.cdn-apple.com/applications/covid19/current/static/og_image_v2.png", width= "282px", height = "150px", alt="")
+            a(href="https://www.apple.com/covid19/").button Kiểm Tra 
+    
+    // News Section container       
+    #main.container
+      .row
+        
+        // FEATURE Article sidebar
+        div(class="6u")
+          section
+            header
+              h2 Tin Nổi Bật
+              
+              span.byline#featureTitle 
+              // Will be updated by /javascripts/feature-article-scrape.js
+              
+            img(id="featureImage", src="", width="560px", height="315px")
+            // Will be updated by /javascripts/feature-article-scrape.js
+            
+            p#featureSummary
+            
+            p Nguồn:  
+              a(href="http://dangcongsan.vn", target="_blank") Báo Điện Tử Đảng Cộng Sản Việt Nam 
+            
+            p#featureDate
+            // Will be update by /javascripts/feature-article-scrape.js           
+              
+            a.button(href="#")#featureLink Tìm Hiểu
+            // Will be update by /javascripts/feature-articles-bundle.js
+            
+        // Other Articles sidebar
+        div(class="3u")
+          section.sidebar
+            header
+              h2 Tin Tức Khác 
+            ul.style2#otherArticles
+              // Implement by /javascripts/other-articles.js
+        
+        // CDC COVID-19 Articles        
+        div(class="3u")
+          section.sidebar
+            header
+              h2 Tin tức từ CDC
+            ul.style1: li#cdc
+              // The script below is included in layout.pug <head> section
+              // script(src="/javascripts/cdc-articles-bundle.js")
+                  

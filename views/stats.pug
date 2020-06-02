@@ -1,0 +1,45 @@
+extends layout
+
+block content
+  #page
+    #marketing.container
+      .row
+        div(class="12u")
+          section
+            header 
+              h2#stats COVID-19 Confirmed Cases All Countries
+              p#stats Data collected from John Hopkins University Data API (refresh if not loaded)
+              
+          .table-responsive
+            p#lastUpdated
+
+            
+            table.table.table-bordered.table-striped#covid_table
+              tr
+                th Country
+                th New Confirmed Cases
+                th New Deaths
+                th Total Confirmed Cases
+                th Total Deaths
+                th Total Recovered            
+                
+  script.
+    $(document).ready(function() {
+      $.getJSON("https://api.covid19api.com/summary", function(data) {
+        var covid19_data = '';
+        var countries_data = data.Countries;
+        $.each(countries_data, function(key, value) {
+          covid19_data += '<tr>';
+          covid19_data += '<td>'+ value.Country + '</td>';
+          covid19_data += '<td>'+ value.NewConfirmed + '</td>';
+          covid19_data += '<td>'+ value.NewDeaths + '</td>';
+          covid19_data += '<td>'+ value.TotalConfirmed + '</td>';
+          covid19_data += '<td>'+ value.TotalDeaths + '</td>';
+          covid19_data += '<td>'+ value.TotalRecovered + '</td>';
+          covid19_data += '</tr>';
+          $("#lastUpdated").text('Last updated on: ' + value.Date);
+        });
+        $('#covid_table').append(covid19_data);
+      });
+    });
+          
