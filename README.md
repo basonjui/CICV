@@ -1,13 +1,12 @@
 # CICV
 
-COVID-19 Information Center of Vietnam
+CICV is abbreviation for **COVID-19 Information Center of Vietnam**. 
+
+It is a simple web app that seeks to deliver to you the latest news and statistics regarding the ongoing COVID-19 pandemic around the world and in Vietnam.
 
 https://cicv.herokuapp.com
 
-
 ## Summary 
-
-CICV seeks to deliver to you the latest news and statistics regarding the ongoing COVID-19 pandemic around the world and in Vietnam.
 
 The app is built with **Express.js**, **JavaScript**, and **Pug** templating engine. 
 
@@ -19,7 +18,9 @@ However, web scraping belongs to a gray area of legalities, not every resources 
 
 ## Overview
 
-CICV solves the problem of getting incorrect COVID-19 information from non-authorized Internet sources, or wasting a lot of time to to find important COVID-19 information from having to browse multiple sources. CICV collects information from many trusted sources around the world, and put them together on a single platform where you can just click and find everything you need. 
+CICV solves the problem of getting incorrect COVID-19 information from non-authorized Internet sources, or wasting a lot of time to to find important COVID-19 information from having to browse multiple sources. 
+
+CICV collects information from many trusted sources around the world, and put them together on a single platform where you can just click and find everything you need. 
 
 ## Installation
 
