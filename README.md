@@ -9,7 +9,9 @@ https://cicv.herokuapp.com
 
 CICV seeks to deliver to you the latest news and statistics regarding the ongoing COVID-19 pandemic around the world and in Vietnam.
 
-The app is built with **Express.js**, **JavaScript**, and **Pug** templating engine. Data are collected from trusted information sources such as DangCongSan.vn, John HopKins COVID-19 API, CDC and WHO organizations. 
+The app is built with **Express.js**, **JavaScript**, and **Pug** templating engine. 
+
+Data are collected from trusted information sources such as DangCongSan.vn, John HopKins COVID-19 API, CDC and WHO organizations. 
 
 This project also aims to demonstrate basic Web Scraping, and RSS parsing methods in JavaScript, which allows you to collect data from other available sources on the Internet and bring it to your website. 
 
