@@ -4,7 +4,7 @@ const CORS_PROXY = "https://cors-anywhere.herokuapp.com/";
 
 //https://tools.cdc.gov/api/v2/resources/media/403372.rss
 //'http://dangcongsan.vn/so-do-website/rss/3709'
-parser.parseURL(CORS_PROXY + 'https://tools.cdc.gov/api/v2/resources/media/404952.rss', function(err, feed) {
+parser.parseURL(/*CORS_PROXY + */'https://tools.cdc.gov/api/v2/resources/media/404952.rss', function(err, feed) {
   if (err) throw err;
   for (let i = 0; i < 7; i++) {
     const entry = feed.items[i];
