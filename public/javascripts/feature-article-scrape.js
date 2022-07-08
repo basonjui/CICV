@@ -2,7 +2,7 @@ const request = require('request');
 const cheerio = require('cheerio');
 const CORS_PROXY = "https://cors-anywhere.herokuapp.com/";
 
-request(CORS_PROXY + 'http://dangcongsan.vn/phong-chong-dich-covid-19', function(err, resp, html) {
+request(CORS_PROXY + 'https://dangcongsan.vn/phong-chong-dich-covid-19', function(err, resp, html) {
   if (!err) {
     const $ = cheerio.load(html);
 
