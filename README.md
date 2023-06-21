@@ -2,6 +2,13 @@
 
 It is a simple web app that seeks to deliver to you the latest news and statistics regarding the ongoing COVID-19 pandemic around the world and in Vietnam.
 
+**Important Notes**:
+
+Heroku no longer offers a Free Tier, therefore, CICV is no longer running on https://cicv.herokuapp.com. 
+
+It has been a really long time since I last touched JavaScript, and also, COVID-19 is no longer a big concern as it used to be. Hopefully, I can find some time to make some light updates and get CICV back up and running as a sample website.
+- basonjui, Jun 2023.
+
 ## Summary 
 
 The app is built with **Express.js**, **JavaScript**, and **Pug** templating engine. 
