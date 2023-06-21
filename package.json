@@ -17,7 +17,7 @@
     "morgan": "~1.9.1",
     "pug": "3.0.1",
     "request": "^2.88.2",
-    "rss-parser": "^3.8.0"
+    "rss-parser": "^3.13.0"
   },
   "devDependencies": {
     "browserify": "^16.5.1",
