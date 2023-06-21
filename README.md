@@ -1,10 +1,6 @@
-# CICV
-
-CICV is abbreviation for **COVID-19 Information Center of Vietnam**. 
+# COVID-19 Information Center of Vietnam (CICV)
 
 It is a simple web app that seeks to deliver to you the latest news and statistics regarding the ongoing COVID-19 pandemic around the world and in Vietnam.
-
-https://cicv.herokuapp.com
 
 ## Summary 
 
